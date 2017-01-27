@@ -1,3 +1,30 @@
-<p>
-  member-list works!
-</p>
+<h2>Members-list</h2>
+
+<!-- <div class="searchPlace">
+<select (change)="onChange($event.target.value)">
+  <option value="allTypes" selected="selected">All Projects</option>
+  <option value="project">Project</option>
+  <option value="product">Product</option>
+  <option value="charity">Charity</option>
+</select>
+<input [(ngModel)]="term" placeholder="Search by Name or Author" class="searchBar">
+</div>
+ -->
+
+<div *ngFor="let member of members | async"  class="panel panel-default">
+  <div class="panel-body">
+    <h3 (click)="goToDetailPage(member)"><em>{{member.firstName}}</em>{{member.lastName}}</h3>
+    <div class="">
+      <h4>{{member.phone}}</h4>
+    </div>
+      <!-- <div *ngIf="currentRoute === '/admin'">
+          <hr>
+          <app-edit-project [selectedProject]="project"></app-edit-project>
+      </div> -->
+
+      <!-- <div *ngIf="currentRoute !== '/admin'">
+        <app-fund [selectedProject]="project"></app-fund>
+      </div> -->
+
+  </div>
+</div>
