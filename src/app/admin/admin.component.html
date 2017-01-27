@@ -14,7 +14,7 @@
       <!-- <div class="form-group"><input class="form-control" #newshow placeholder="Beauty and the Beast"></div> -->
       <div>
         <label>Show:</label><br>
-        <select class="form-control" #newShow>
+        <select class="form-control" #newshow>
           <option value="BeautyAndTheBeast" selected="selected">Beauty and the Beast</option>
           <option value="TheLittleMermaid">The Little Mermaid</option>
           <option value="JamesAndTheGiantPeach">James and the Giant Peach</option>
@@ -24,26 +24,7 @@
 
 
       <hr>
-      <button class="btn btn-warning"(click)="submitForm(
-                                  newfirstName.value,
-                                  newlastName.value,
-                                  newphone.value,
-                                  newemail.value,
-                                  newaddress.value,
-                                  newbirthdate.value,
-                                  newgender.value,
-                                  neweduClass.value,
-                                  newshow.value
-                                  ); newfirstName.value='';
-                                     newlastName.value='';
-                                     newphone.value='';
-                                     newemail.value='';
-                                     newaddress.value='';
-                                     newbirthdate.value='';
-                                     newgender.value='';
-                                     neweduClass.value='';
-                                     newshow.value='';
-                                      ">Create</button>
+      <button class="btn btn-warning"(click)="submitForm(newfirstName.value, newlastName.value, newphone.value, newemail.value,newaddress.value, newbirthdate.value, newgender.value, neweduClass.value, newshow.value); newfirstName.value=''; newlastName.value=''; newphone.value=''; newemail.value=''; newaddress.value=''; newbirthdate.value=''; newgender.value=''; neweduClass.value=''; newshow.value='';">Create</button>
     </div>
   </div>
 </div>
