@@ -1,6 +1,29 @@
-# TheaterGroup
+# Theater Arts Group
+
+This app allows the user to create group members, view, edit and delete them. It also has filter functionality and search capabilities.
 
 This project was generated with [angular-cli](https://github.com/angular/angular-cli) version 1.0.0-beta.26.
+
+
+### Support and Contact Details
+
+* Github for Joshua Rinard: https://github.com/jrinard
+
+* Email: jrinard@hotmail.com
+
+
+# FireBase setup
+  create app/api-keys.ts
+
+    ```
+    export var masterFirebaseConfig = {
+        apiKey: "xxxx",
+        authDomain: "xxxx.firebaseapp.com",
+        databaseURL: "https://xxxx.firebaseio.com",
+        storageBucket: "xxxx.appspot.com",
+        messagingSenderId: "xxxx"
+      };
+    ```
 
 ## Development server
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
@@ -29,3 +52,9 @@ Run `ng github-pages:deploy` to deploy to GitHub Pages.
 ## Further help
 
 To get more help on the `angular-cli` use `ng help` or go check out the [Angular-CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+### License
+
+MIT
+
+Copyright (c) 2016 Joshua Rinard
