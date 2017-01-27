@@ -7,6 +7,6 @@ export class Member {
                public birthdate: string,
                public gender: string,
                public show: string,
-               public eduClass: string   ) { }
+               public eduClass: string) { }
 
 }

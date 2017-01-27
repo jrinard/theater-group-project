@@ -24,18 +24,20 @@ constructor(private angularFire: AngularFire) {
     return this.angularFire.database.object('/members/' + memberId);// firebase is searching for us
   }
 
-  // updateMember(localUpdatedMember){
-  //   var albumEntryInFirebase = this.getMemberById(localUpdatedMember.$key);// finds album by id
-  //   albumEntryInFirebase.update({//updating album.value
-  //     name: localUpdatedMember.name,
-  //     details: localUpdatedMember.details,
-  //     manager: localUpdatedMember.manager,
-  //     goal: localUpdatedMember.goal,
-  //     moneyraised: localUpdatedMember.moneyraised,
-  //     reward: localUpdatedMember.reward,
-  //     type: localUpdatedMember.type});
-  // }
-  //
+  updateMember(localUpdatedMember){
+    var memberEntryInFirebase = this.getMemberById(localUpdatedMember.$key);// finds album by id
+    memberEntryInFirebase.update({//updating album.value
+      firstName: localUpdatedMember.firstName,
+      lastName: localUpdatedMember.lastName,
+      phone: localUpdatedMember.phone,
+      email: localUpdatedMember.email,
+      address: localUpdatedMember.address,
+      birthdate: localUpdatedMember.birthdate,
+      gender: localUpdatedMember.gender,
+      show: localUpdatedMember.show,
+      eduClass: localUpdatedMember.eduClass});
+  }
+
   // fundMember(localUpdatedMember, amountInputed){
   //   var albumEntryInFirebase = this.getMemberById(localUpdatedMember.$key);// finds album by id
   //   localUpdatedMember.moneyraised = parseInt(localUpdatedMember.moneyraised) + parseInt(amountInputed);
@@ -49,9 +51,9 @@ constructor(private angularFire: AngularFire) {
   //     type: localUpdatedMember.type});
   // }
 
-  // deleteMember(localMemberToDelete){
-  //   var albumEntryInFirebase = this.getMemberById(localMemberToDelete.$key);
-  //   albumEntryInFirebase.remove();
-  // }
+  deleteMember(localMemberToDelete){
+    var memberEntryInFirebase = this.getMemberById(localMemberToDelete.$key);
+    memberEntryInFirebase.remove();
+  }
 
 }

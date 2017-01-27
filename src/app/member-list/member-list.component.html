@@ -2,8 +2,8 @@
 
 <!-- <div class="searchPlace">
 <select (change)="onChange($event.target.value)">
-  <option value="allTypes" selected="selected">All Projects</option>
-  <option value="project">Project</option>
+  <option value="allTypes" selected="selected">All Members</option>
+  <option value="member">Member</option>
   <option value="product">Product</option>
   <option value="charity">Charity</option>
 </select>
@@ -17,13 +17,13 @@
     <div class="">
       <h4>{{member.phone}}</h4>
     </div>
-      <!-- <div *ngIf="currentRoute === '/admin'">
+      <div *ngIf="currentRoute === '/admin'">
           <hr>
-          <app-edit-project [selectedProject]="project"></app-edit-project>
-      </div> -->
+          <app-edit-member [selectedMember]="member"></app-edit-member>
+      </div>
 
       <!-- <div *ngIf="currentRoute !== '/admin'">
-        <app-fund [selectedProject]="project"></app-fund>
+        <app-fund [selectedMember]="member"></app-fund>
       </div> -->
 
   </div>

@@ -13,6 +13,7 @@ export class AdminComponent implements OnInit {
 
   constructor(private memberService: MemberService) { }
 
+
   ngOnInit() {
   }
 

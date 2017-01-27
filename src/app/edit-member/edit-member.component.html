@@ -1,0 +1,46 @@
+<div class="card">
+<h4>Edit Member:</h4>
+
+<div>
+<input [(ngModel)]="selectedMember.firstName">
+</div>
+<div>
+<input [(ngModel)]="selectedMember.lastName">
+</div>
+<div>
+<input [(ngModel)]="selectedMember.phone">
+</div>
+<div>
+<input [(ngModel)]="selectedMember.email">
+</div>
+<div>
+<input [(ngModel)]="selectedMember.address">
+</div>
+<div>
+<input [(ngModel)]="selectedMember.birthdate">
+</div>
+<div>
+<input [(ngModel)]="selectedMember.gender">
+</div>
+<div>
+<input [(ngModel)]="selectedMember.show">
+</div>
+<div>
+<input [(ngModel)]="selectedMember.eduClass">
+</div>
+
+<!-- <div>
+<label>Type: </label>
+<select #newType [(ngModel)]="selectedMember.type">
+  <option value="member" selected="selected">Member</option>
+  <option value="product">Product</option>
+  <option value="charity">Charity</option>
+</select>
+</div> -->
+<div>
+<button (click)="beginUpdatingThisMember(selectedMember)">Update</button>
+
+
+<button (click)="beginDeletingMember(selectedMember)">Delete</button>
+</div>
+</div>
