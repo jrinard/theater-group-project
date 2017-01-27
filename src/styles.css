@@ -7,3 +7,42 @@
   background-color: #f5f5f5;
   padding: 15px;
  }
+
+ .searchPlace {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 5px;
+}
+
+.specificMember {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  padding-right: 50px;
+  margin-left:50px !important;
+}
+
+.specificMember,h3,h4,p {
+  color: #F5B041 !important;
+  margin-left: 50px !important;
+
+}
+
+h2 {
+  color: #F5B041 !important;
+}
+
+body {
+  background-color: #222 !important;
+  color: #fff;
+}
+
+.card {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center; }
