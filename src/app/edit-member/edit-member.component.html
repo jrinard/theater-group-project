@@ -22,21 +22,23 @@
 <div>
 <input [(ngModel)]="selectedMember.gender">
 </div>
-<div>
+<!-- <div>
 <input [(ngModel)]="selectedMember.show">
-</div>
+</div> -->
 <div>
 <input [(ngModel)]="selectedMember.eduClass">
 </div>
 
-<!-- <div>
-<label>Type: </label>
-<select #newType [(ngModel)]="selectedMember.type">
-  <option value="member" selected="selected">Member</option>
-  <option value="product">Product</option>
-  <option value="charity">Charity</option>
+<div>
+<label>Show: </label>
+<select #newShow [(ngModel)]="selectedMember.show">
+  <option value="BeautyAndTheBeast" selected="selected">Beauty and the Beast</option>
+  <option value="TheLittleMermaid">The Little Mermaid</option>
+  <option value="JamesAndTheGiantPeach">James and the Giant Peach</option>
 </select>
-</div> -->
+</div>
+
+
 <div>
 <button (click)="beginUpdatingThisMember(selectedMember)">Update</button>
 

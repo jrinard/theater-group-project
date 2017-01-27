@@ -11,19 +11,18 @@
       <div class="form-group"><input class="form-control" #newaddress  placeholder="123 main st"></div>
       <div class="form-group"><input class="form-control" #newbirthdate  placeholder="Jan 15, 1975"></div>
       <div class="form-group"><input class="form-control" #newgender  placeholder="Male"></div>
-      <div class="form-group"><input class="form-control" #newshow placeholder="Beauty and the Beast"></div>
+      <!-- <div class="form-group"><input class="form-control" #newshow placeholder="Beauty and the Beast"></div> -->
+      <div>
+        <label>Show:</label><br>
+        <select class="form-control" #newShow>
+          <option value="BeautyAndTheBeast" selected="selected">Beauty and the Beast</option>
+          <option value="TheLittleMermaid">The Little Mermaid</option>
+          <option value="JamesAndTheGiantPeach">James and the Giant Peach</option>
+        </select>
+      </div>
       <div class="form-group"><input class="form-control" #neweduClass placeholder="Ballroom Dancing"></div>
 
 
-      <!-- <div>
-        <label>Show:</label><br>
-        <select class="form-control" #newType>
-          <option value="Beauty_and_the_Beast" selected="selected">Beauty and the Beast</option>
-          <option value="The_Little_Mermaid">The Little Mermaid</option>
-          <option value="James_and_the_Giant_Peach">James and the Giant Peach</option>
-        </select>
-
-      </div> -->
       <hr>
       <button class="btn btn-warning"(click)="submitForm(
                                   newfirstName.value,
@@ -33,8 +32,8 @@
                                   newaddress.value,
                                   newbirthdate.value,
                                   newgender.value,
-                                  newshow.value,
-                                  neweduClass.value
+                                  neweduClass.value,
+                                  newshow.value
                                   ); newfirstName.value='';
                                      newlastName.value='';
                                      newphone.value='';
@@ -42,8 +41,8 @@
                                      newaddress.value='';
                                      newbirthdate.value='';
                                      newgender.value='';
-                                     newshow.value='';
                                      neweduClass.value='';
+                                     newshow.value='';
                                       ">Create</button>
     </div>
   </div>

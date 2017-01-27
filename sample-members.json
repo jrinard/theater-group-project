@@ -7,8 +7,9 @@
     "address": "123 1st st",
     "birthdate": "Oct 15, 1975",
     "gender": "Male",
-    "show": "Beauty and the Beast",
-    "class": "Tap"
+    "eduClass": "Tap",
+    "show": "Beauty and the Beast"
+
     }, {
     "firstName": "Tony",
     "lastName": "Stark",
@@ -17,8 +18,8 @@
     "address": "423 1st st",
     "birthdate": "Jan 15, 1965",
     "gender": "Male",
-    "show": "Little Mermaid",
-    "class": "Ballroom"
+    "eduClass": "Ballroom",
+    "show": "Little Mermaid"
     }, {
     "firstName": "Bruce",
     "lastName": "Banner",
@@ -27,7 +28,7 @@
     "address": "6th ave E",
     "birthdate": "June 5, 1985",
     "gender": "Male",
-    "show": "James and the Giant Peach",
-    "class": "Foundations in Dance"
+    "eduClass": "Foundations in Dance",
+    "show": "James and the Giant Peach"
   }]
 }
