@@ -1,0 +1,33 @@
+
+{ "members": [{
+    "firstName": "James",
+    "lastName": "Rhodes",
+    "phone": "503-504-3896",
+    "email": "jrhodes@gmail.com",
+    "address": "123 1st st",
+    "birthdate": "Oct 15, 1975",
+    "gender": "Male",
+    "show": "Beauty and the Beast",
+    "class": "Tap"
+    }, {
+    "firstName": "Tony",
+    "lastName": "Stark",
+    "phone": "503-504-3896",
+    "email": "Stark@gmail.com",
+    "address": "423 1st st",
+    "birthdate": "Jan 15, 1965",
+    "gender": "Male",
+    "show": "Little Mermaid",
+    "class": "Ballroom"
+    }, {
+    "firstName": "Bruce",
+    "lastName": "Banner",
+    "phone": "503-543-7890",
+    "email": "banner@gmail.com",
+    "address": "6th ave E",
+    "birthdate": "June 5, 1985",
+    "gender": "Male",
+    "show": "James and the Giant Peach",
+    "class": "Foundations in Dance"
+  }]
+}
