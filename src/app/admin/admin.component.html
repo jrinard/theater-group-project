@@ -1,0 +1,54 @@
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title">New Member</h3>
+  </div>
+  <div class="panel-body">
+    <div>
+      <div class="form-group"><input class="form-control" #newfirstName placeholder="Tony"></div>
+      <div class="form-group"><input class="form-control" #newlastName placeholder="Stark"></div>
+      <div class="form-group"><input class="form-control" #newphone placeholder="123-456-789"></div>
+      <div class="form-group"><input class="form-control" #newemail  placeholder="tony@gmail.com"></div>
+      <div class="form-group"><input class="form-control" #newaddress  placeholder="123 main st"></div>
+      <div class="form-group"><input class="form-control" #newbirthdate  placeholder="Jan 15, 1975"></div>
+      <div class="form-group" class="form-group"><input class="form-control" #newgender  placeholder="Male"></div>
+      <div class="form-group"><input class="form-control" #newshow placeholder="Beauty and the Beast"></div>
+      <div class="form-group"><input class="form-control" #newclass placeholder="Ballroom Dancing"></div>
+
+
+      <!-- <div>
+        <label>Show:</label><br>
+        <select class="form-control" #newType>
+          <option value="Beauty_and_the_Beast" selected="selected">Beauty and the Beast</option>
+          <option value="The_Little_Mermaid">The Little Mermaid</option>
+          <option value="James_and_the_Giant_Peach">James and the Giant Peach</option>
+        </select>
+
+      </div> -->
+      <hr>
+      <button class="btn btn-warning"(click)="submitForm(
+                                  newfirstName.value,
+                                  newlastName.value,
+                                  newphone.value,
+                                  newemail.value,
+                                  newaddress.value,
+                                  newbirthdate.value,
+                                  newgender.value,
+                                  newshow.value,
+                                  newclass.value
+                                  ); newfirstName.value='';
+                                     newlastName.value='';
+                                     newphone.value='';
+                                     newemail.value='';
+                                     newaddress.value='';
+                                     newbirthdate.value='';
+                                     newgender.value='';
+                                     newshow.value='';
+                                     newclass.value='';
+                                      ">Create</button>
+    </div>
+  </div>
+</div>
+
+<div>
+  <app-member-list></app-member-list>
+</div>
