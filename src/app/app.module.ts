@@ -14,6 +14,7 @@ import { AngularFireModule } from 'angularfire2';
 import { MemberDetailComponent } from './member-detail/member-detail.component';
 import { AdminComponent } from './admin/admin.component';
 import { EditMemberComponent } from './edit-member/edit-member.component';
+import { ShowPipe } from './show.pipe';
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -30,7 +31,8 @@ export const firebaseConfig = {
     MemberListComponent,
     MemberDetailComponent,
     AdminComponent,
-    EditMemberComponent
+    EditMemberComponent,
+    ShowPipe
   ],
   imports: [
     BrowserModule,

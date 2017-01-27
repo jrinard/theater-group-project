@@ -1,17 +1,17 @@
 <h2>Members-list</h2>
 
-<!-- <div class="searchPlace">
+<div class="searchPlace">
 <select (change)="onChange($event.target.value)">
-  <option value="allTypes" selected="selected">All Members</option>
-  <option value="member">Member</option>
-  <option value="product">Product</option>
-  <option value="charity">Charity</option>
+  <option value="allShows" selected="selected">All Shows</option>
+  <option value="BeautyAndTheBeast">Beauty and the Beast</option>
+  <option value="JamesAndTheGiantPeach">James and the Giant Peach</option>
+  <option value="TheLittleMermaid">The Little Mermaid</option>
 </select>
-<input [(ngModel)]="term" placeholder="Search by Name or Author" class="searchBar">
+<!-- <input [(ngModel)]="term" placeholder="Search by Name or Author" class="searchBar"> -->
 </div>
- -->
 
-<div *ngFor="let member of members | async"  class="panel panel-default">
+
+<div *ngFor="let member of members | async | show:filterByShow"  class="panel panel-default">
   <div class="panel-body">
     <h3 (click)="goToDetailPage(member)"><em>{{member.firstName}}</em>{{member.lastName}}</h3>
     <div class="">

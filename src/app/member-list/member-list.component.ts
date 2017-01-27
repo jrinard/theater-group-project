@@ -24,10 +24,10 @@ export class MemberListComponent implements OnInit {
       this.router.navigate(['member-detail', clickedMember.$key]);
     }
 
-    filterByType: string = "allTypes";
+    filterByShow: string = "allShows";
 
     onChange(optionFromMenu) {
-      this.filterByType = optionFromMenu;
+      this.filterByShow = optionFromMenu;
     }
 
 }
