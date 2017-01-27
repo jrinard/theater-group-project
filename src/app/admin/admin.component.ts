@@ -24,10 +24,10 @@ export class AdminComponent implements OnInit {
              birthdate: string,
              gender: string,
              show: string,
-             educlass: string) {
+             eduClass: string) {
                var newMember: Member = new Member(
-                 name,lastName,phone,email,address,
-                 birthdate,gender,show,educlass);
+                 firstName,lastName,phone,email,address,
+                 birthdate,gender,show,eduClass);
                  this.memberService.addMember(newMember);
              }
 

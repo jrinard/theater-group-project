@@ -21,7 +21,7 @@ constructor(private angularFire: AngularFire) {
   }
 
   getMemberById(memberId: string){
-    return this.angularFire.database.object('/member/' + memberId);// firebase is searching for us
+    return this.angularFire.database.object('/members/' + memberId);// firebase is searching for us
   }
 
   // updateMember(localUpdatedMember){
