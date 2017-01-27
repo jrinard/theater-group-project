@@ -20,9 +20,9 @@ export class MemberListComponent implements OnInit {
       this.members = this.memberService.getMembers();
     }
 
-    // goToDetailPage(clickedMember) {
-    //   this.router.navigate(['member', clickedMember.$key]);
-    // }
+    goToDetailPage(clickedMember) {
+      this.router.navigate(['member-detail', clickedMember.$key]);
+    }
 
     filterByType: string = "allTypes";
 
