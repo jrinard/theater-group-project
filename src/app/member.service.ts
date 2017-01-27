@@ -34,8 +34,7 @@ constructor(private angularFire: AngularFire) {
       address: localUpdatedMember.address,
       birthdate: localUpdatedMember.birthdate,
       gender: localUpdatedMember.gender,
-      show: localUpdatedMember.show,
-      eduClass: localUpdatedMember.eduClass});
+      show: localUpdatedMember.show});
   }
 
   // fundMember(localUpdatedMember, amountInputed){

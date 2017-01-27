@@ -6,7 +6,6 @@ export class Member {
                public address: string,
                public birthdate: string,
                public gender: string,
-               public show: string,
-               public eduClass: string) { }
+               public show: string) { }
 
 }
