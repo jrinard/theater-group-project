@@ -21,12 +21,12 @@ constructor(private angularFire: AngularFire) {
   }
 
   getMemberById(memberId: string){
-    return this.angularFire.database.object('/members/' + memberId);// firebase is searching for us
+    return this.angularFire.database.object('/members/' + memberId);
   }
 
   updateMember(localUpdatedMember){
-    var memberEntryInFirebase = this.getMemberById(localUpdatedMember.$key);// finds album by id
-    memberEntryInFirebase.update({//updating album.value
+    var memberEntryInFirebase = this.getMemberById(localUpdatedMember.$key);
+    memberEntryInFirebase.update({
       firstName: localUpdatedMember.firstName,
       lastName: localUpdatedMember.lastName,
       phone: localUpdatedMember.phone,
@@ -36,19 +36,6 @@ constructor(private angularFire: AngularFire) {
       gender: localUpdatedMember.gender,
       show: localUpdatedMember.show});
   }
-
-  // fundMember(localUpdatedMember, amountInputed){
-  //   var albumEntryInFirebase = this.getMemberById(localUpdatedMember.$key);// finds album by id
-  //   localUpdatedMember.moneyraised = parseInt(localUpdatedMember.moneyraised) + parseInt(amountInputed);
-  //   albumEntryInFirebase.update({//updating album.value
-  //     name: localUpdatedMember.name,
-  //     details: localUpdatedMember.details,
-  //     manager: localUpdatedMember.manager,
-  //     goal: localUpdatedMember.goal,
-  //     moneyraised: localUpdatedMember.moneyraised,
-  //     reward: localUpdatedMember.reward,
-  //     type: localUpdatedMember.type});
-  // }
 
   deleteMember(localMemberToDelete){
     var memberEntryInFirebase = this.getMemberById(localMemberToDelete.$key);

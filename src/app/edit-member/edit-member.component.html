@@ -1,37 +1,36 @@
 <div class="card">
-<h4>Edit Member:</h4>
-
-<div>
-<input [(ngModel)]="selectedMember.firstName">
-</div>
-<div>
-<input [(ngModel)]="selectedMember.lastName">
-</div>
-<div>
-<input [(ngModel)]="selectedMember.phone">
-</div>
-<div>
-<input [(ngModel)]="selectedMember.email">
-</div>
-<div>
-<input [(ngModel)]="selectedMember.address">
-</div>
-<div>
-<input [(ngModel)]="selectedMember.birthdate">
-</div>
-<div>
-<input [(ngModel)]="selectedMember.gender">
-</div>
-<div>
-<label>Show: </label>
-<select #newShow [(ngModel)]="selectedMember.show">
-  <option value="BeautyAndTheBeast" selected="selected">Beauty and the Beast</option>
-  <option value="TheLittleMermaid">The Little Mermaid</option>
-  <option value="JamesAndTheGiantPeach">James and the Giant Peach</option>
-</select>
-</div>
-<div>
-<button (click)="beginUpdatingThisMember(selectedMember)">Update</button>
-<button (click)="beginDeletingMember(selectedMember)">Delete</button>
-</div>
+  <label>Edit Member</label>
+  <div class="form-group">
+    <input class="form-control" [(ngModel)]="selectedMember.firstName" placeholder="Hal">
+  </div>
+  <div class="form-group">
+    <input class="form-control"[(ngModel)]="selectedMember.lastName" placeholder="Jordan">
+  </div>
+  <div class="form-group">
+    <input class="form-control"[(ngModel)]="selectedMember.phone" placeholder="123-456-7890">
+  </div>
+  <div class="form-group">
+    <input class="form-control"[(ngModel)]="selectedMember.email" placeholder="hal.jordan@gmail.com">
+  </div>
+  <div class="form-group">
+    <input class="form-control"[(ngModel)]="selectedMember.address" placeholder="127 Main St, Vancouver Wa, 98683">
+  </div>
+  <div class="form-group">
+    <input class="form-control"[(ngModel)]="selectedMember.birthdate" placeholder="May 10, 1999">
+  </div>
+  <div class="form-group">
+    <input class="form-control"[(ngModel)]="selectedMember.gender" placeholder="Male">
+  </div>
+  <div class="form-group">
+    <label>Show</label>
+    <select #newShow class="form-control"[(ngModel)]="selectedMember.show">
+      <option value="BeautyAndTheBeast" selected="selected">Beauty and the Beast</option>
+      <option value="TheLittleMermaid">The Little Mermaid</option>
+      <option value="JamesAndTheGiantPeach">James and the Giant Peach</option>
+    </select>
+  </div>
+  <div>
+    <button class="btn btn-warning" (click)="beginUpdatingThisMember(selectedMember)">Update</button>
+    <button class="btn btn-danger"(click)="beginDeletingMember(selectedMember)">Delete</button>
+  </div>
 </div>

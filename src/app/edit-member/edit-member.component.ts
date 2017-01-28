@@ -21,9 +21,8 @@ export class EditMemberComponent implements OnInit {
   }
 
   beginDeletingMember(memberToBeDeleted){
-  if (confirm("Are You Sure You Want to delete THIS member permanently??")){
-    this.memberService.deleteMember(memberToBeDeleted);
+    if (confirm("Are You Sure You Want to delete THIS member permanently??")){
+      this.memberService.deleteMember(memberToBeDeleted);
+    }
   }
-}
-
 }

@@ -1,46 +1,55 @@
-
 * {
   font-family: 'Bangers', cursive;
   /*font-family: 'Oswald', sans-serif;*/
   letter-spacing: 2px;
 }
+
 p {
   font-family: 'Open Sans', sans-serif;
   letter-spacing: 0px;
 }
 
-
 .footer {
   position: fixed;
   bottom: 0;
   width: 100%;
-  height: 40px;
+  height: 50px;
   background-color: #333;
-  padding: 15px;
- }
+  padding-top: 10px;
+  color: #fff;
+  font-size: 1.4em;
+  text-align: center;
+}
 
+.footer a:hover{
+ color: #fff;
+}
 
-  .searchBar {
-    width: 400px;
-    margin-bottom: 5px;
-    height: 35px;
-    padding: 4px;
-    font-size: 1.5em;
-    margin-left: 20px;
-    float: right;
-  }
+.footer a:active{
+ color: #F5B041;
+ font-size: 1em;
+ background-color: #333;
+}
 
- .selectMenu{
-   width: 400px;
-   margin-bottom: 5px;
-   height: 40px;
-   padding: 4px;
-   font-size: 1.5em;
-   position: relative;
-   right: 0;
- }
+.searchBar {
+  width: 400px;
+  margin-bottom: 5px;
+  height: 35px;
+  padding: 4px;
+  font-size: 1.5em;
+  margin-left: 20px;
+  float: right;
+}
 
-
+.selectMenu{
+ width: 400px;
+ margin-bottom: 5px;
+ height: 40px;
+ padding: 4px;
+ font-size: 1.5em;
+ position: relative;
+ right: 0;
+}
 
 .specificMember {
   display: flex;
@@ -49,7 +58,7 @@ p {
   align-content: center;
   justify-content: center;
   padding-right: 50px;
-  /*margin-left:50px !important;*/
+
 }
 .panel,p{
   color: #000;
@@ -57,8 +66,6 @@ p {
 
 .specificMember,h3,h4 {
   color: #F5B041 !important;
-  /*margin-left: 50px !important;*/
-
 }
 
 h2 {
@@ -73,12 +80,6 @@ body {
   background-color: #222 !important;
   color: #fff;
 }
-/*.card {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-}*/
 
 .navbar{
   background-color: #333 !important;
@@ -132,18 +133,10 @@ a:visited {
   font-family: 'Open Sans', sans-serif;
   letter-spacing: 0px;
 }
-
-/*
-.navbar {
-  position: relative;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: row;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  padding: 0.5rem 1rem;
-}*/
+.yellowBar {
+  height: 3px;
+  background-color: #F5B041;
+}
+.spacer {
+  height: 50px;
+}

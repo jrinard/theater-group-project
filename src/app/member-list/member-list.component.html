@@ -1,33 +1,24 @@
 <h2>Members</h2>
-
 <input class="searchBar form-control pull-right"[(ngModel)]="term" placeholder="Search by Name or Show" class="searchBar">
-
 <div class="selectMenu">
-<select class="form-control"(change)="onChange($event.target.value)">
-  <option value="allShows" selected="selected">All Shows</option>
-  <option value="BeautyAndTheBeast">Beauty and the Beast</option>
-  <option value="JamesAndTheGiantPeach">James and the Giant Peach</option>
-  <option value="TheLittleMermaid">The Little Mermaid</option>
-</select>
+  <select class="form-control"(change)="onChange($event.target.value)">
+    <option value="allShows" selected="selected">All Shows</option>
+    <option value="BeautyAndTheBeast">Beauty and the Beast</option>
+    <option value="JamesAndTheGiantPeach">James and the Giant Peach</option>
+    <option value="TheLittleMermaid">The Little Mermaid</option>
+  </select>
 </div>
-
 <div *ngFor="let member of members | async | show:filterByShow | search:term"  class="panel panel-default">
   <div class="panel-body">
     <h3 (click)="goToDetailPage(member)">
       {{member.firstName}}
-      {{member.lastName}}</h3>
-      <h4>{{member.phone}}</h4>
-      <span class="tag">Click name for details</span>
-
-
-      <div *ngIf="currentRoute === '/admin'">
-          <hr>
-          <app-edit-member [selectedMember]="member"></app-edit-member>
-      </div>
-
-      <!-- <div *ngIf="currentRoute !== '/admin'">
-        <app-fund [selectedMember]="member"></app-fund>
-      </div> -->
-
+      {{member.lastName}}
+    </h3>
+    <h4>{{member.phone}}</h4>
+    <span class="tag">Click name for details</span>
+    <div *ngIf="currentRoute === '/admin'">
+    <hr>
+      <app-edit-member [selectedMember]="member"></app-edit-member>
+    </div>
   </div>
 </div>
