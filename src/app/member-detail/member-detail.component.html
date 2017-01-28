@@ -1,10 +1,11 @@
-<div class="specificMember"class="panel panel-default">
-  <h3>{{(memberToDisplay | async)?.firstName}}</h3>
-  <h4>{{(memberToDisplay | async)?.lastName}}</h4>
-  <p>{{(memberToDisplay | async)?.phone}}</p>
-  <p>{{(memberToDisplay | async)?.email}}</p>
-  <p>{{(memberToDisplay | async)?.address}}</p>
-  <p>{{(memberToDisplay | async)?.birthdate}}</p>
-  <p>{{(memberToDisplay | async)?.gender}}</p>
-  <p>{{(memberToDisplay | async)?.show}}</p>
+<div class="panel panel-heading">
+  <h3>{{(memberToDisplay | async)?.firstName}}
+  {{(memberToDisplay | async)?.lastName}}</h3>
+  <span class="detail">
+  {{(memberToDisplay | async)?.phone}}<br>
+  {{(memberToDisplay | async)?.email}}<br>
+  {{(memberToDisplay | async)?.address}}<br>
+  {{(memberToDisplay | async)?.birthdate}}<br>
+  {{(memberToDisplay | async)?.gender}}<br>
+  {{(memberToDisplay | async)?.show}}</span>
 </div>
