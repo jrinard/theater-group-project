@@ -4,6 +4,10 @@ This app allows the user to create group members, view, edit and delete them. It
 
 This project was generated with [angular-cli](https://github.com/angular/angular-cli) version 1.0.0-beta.26.
 
+### View Deployed app.
+
+https://theater-group-ang.firebaseapp.com/
+
 
 ### Support and Contact Details
 
